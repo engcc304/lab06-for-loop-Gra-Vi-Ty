@@ -15,11 +15,24 @@
     Output:
         Series: 8 6 4 2 0
 */
+
 #include <stdio.h>
 
 int main() {
-
-    //--| YOUR CODE HERE
-
-    return 0 ;
-}//end main function
+    int N, i;
+    printf("Enter value:\n");
+    scanf("%d", &N);
+    if(N %2 ==1){
+        printf("Series: ");
+        for(i=1; i<=N; i+=2){
+            printf("%d ", i);
+        }
+    }else{
+        printf("Series: ");
+        for(i=N; i>=0; i-=2){
+            printf("%d ", i);
+        }
+    }
+    
+    return 0;
+}
